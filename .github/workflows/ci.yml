@@ -6,8 +6,12 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: read
+
 jobs:
   test:
+    name: Test on Node.js 20
     runs-on: ubuntu-latest
 
     steps:
