@@ -7,7 +7,7 @@ app.use(express.json());
 
 // Main route
 app.get('/', (req, res) => {
-  res.send('Hello, Cloud Student! CI/CD is working.');
+  res.send('Hello, Cloud Student! CI/CD is working in Week 8.');
 });
 
 // Health check route

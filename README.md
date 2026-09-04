@@ -12,7 +12,7 @@ This repository contains a small Express application and an automated CI pipelin
 
 The application provides:
 
-- `GET /` → `Hello, Cloud Student! CI/CD is working.`
+- `GET /` → `Hello, Cloud Student! CI/CD is working in Week 8.`
 - `GET /health` → JSON health status
 - Automated tests for the greeting endpoint, health endpoint and 404 behavior
 
@@ -48,6 +48,10 @@ Each run checks out the commit, sets up Node.js 20, installs the locked dependen
 ### Failure diagnosis
 
 The failed job was `test` and the failed step was `Run tests`. The test expected `Hello, Nina! This test should fail.`, but the application returned `Hello, Cloud Student! CI/CD is working.`. Jest reported `expect(received).toBe(expected)`, returned a non-zero exit code, and stopped later steps. The next commit restored the correct expected value and produced the recovery green run.
+
+### Failure evidence image
+
+The [Run #2 evidence image](evidence/run-2-failure-evidence.png) records the public run, commit, failed job, failed step, expected value, actual value and error excerpt without exposing credentials.
 
 ## Exit Ticket
 
