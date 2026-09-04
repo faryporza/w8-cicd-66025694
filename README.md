@@ -49,6 +49,10 @@ Each run checks out the commit, sets up Node.js 20, installs the locked dependen
 
 The failed job was `test` and the failed step was `Run tests`. The test expected `Hello, Nina! This test should fail.`, but the application returned `Hello, Cloud Student! CI/CD is working.`. Jest reported `expect(received).toBe(expected)`, returned a non-zero exit code, and stopped later steps. The next commit restored the correct expected value and produced the recovery green run.
 
+### Failure evidence image
+
+The [Run #2 evidence image](evidence/run-2-failure-evidence.png) records the public run, commit, failed job, failed step, expected value, actual value and error excerpt without exposing credentials.
+
 ## Exit Ticket
 
 1. **ส่วนใดคือ Continuous Integration?** ทุกครั้งที่ push หรือเปิด pull request ระบบจะ checkout code ติดตั้ง dependency และรัน automated tests โดยอัตโนมัติ นี่คือการรวมและตรวจสอบ code อย่างสม่ำเสมอ
