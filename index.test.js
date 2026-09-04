@@ -6,7 +6,7 @@ describe('Application Endpoints', () => {
   test('GET / returns 200 and greeting message', async () => {
     const response = await request(app).get('/');
     expect(response.status).toBe(200);
-    expect(response.text).toBe('Hello, Cloud Student! CI/CD is working.');
+    expect(response.text).toBe('Hello, Cloud Student! CI/CD is working in Week 8.');
   });
 
   // Test 2: Verify health check endpoint

@@ -12,7 +12,7 @@ This repository contains a small Express application and an automated CI pipelin
 
 The application provides:
 
-- `GET /` → `Hello, Cloud Student! CI/CD is working.`
+- `GET /` → `Hello, Cloud Student! CI/CD is working in Week 8.`
 - `GET /health` → JSON health status
 - Automated tests for the greeting endpoint, health endpoint and 404 behavior
 
